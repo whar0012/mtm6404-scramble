@@ -1,0 +1,129 @@
+/* Center the entire game */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+  }
+  
+  /* Also Helps Mobile View */
+  /* Root container */
+  #root {
+    text-align: center;
+    width: 90%;
+  }
+  
+  /* Helps Deskop View */
+  @media (min-width: 1200px) {
+    #root {
+      width: 50%;
+    }
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  /* Scoreboard layout */
+  #scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+  }
+  
+  /* Score and Strikes */
+  .counter {
+    text-align: center;
+  }
+  
+  .counter-points {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .counter-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: gray;
+  }
+  
+  /* Scrambled word */
+  #root div:nth-of-type(3) {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  /* Input field */
+  input[type="text"] {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Pass button */
+  button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .rules {
+    text-align: center;
+  }
+  
+  .rules ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .last-action {
+    border: 1px solid black;
+  }
+  
+  .last-action {
+    border: 1px solid black;
+  }
+  
+  .last-action-correct {
+    background: green;
+  }
+  
+  .last-action-wrong {
+    background: red;
+  }
+  
+  .last-action-pass {
+    background: yellow;
+  }
+  
+  .debug {
+    margin-top: 15px;
+    border: 1px solid black;
+    padding-bottom: 15px;
+  }
+  
+  .debug button {
+    /* background: inherit; */
+  }
+  
